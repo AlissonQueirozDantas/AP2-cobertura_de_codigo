@@ -60,5 +60,27 @@ class Item {
     this.price = price;
   }
 }
+describe('Order - erros', () => {
+  let order;
+
+  beforeEach(() => {
+    order = new Order(1);
+  });
+
+  test('não paga pedido se não estiver no status "created"', () => {
+    order.status = 'paid';
+    expect(() => order.pay()).toThrow('Order cannot be paid');
+  });
+
+  test('não completa pedido se não estiver pago', () => {
+    expect(() => order.complete()).toThrow('Order must be paid before it can be completed');
+  });
+
+  test('não cancela pedido completo', () => {
+    order.status = 'completed';
+    expect(() => order.cancel()).toThrow('Completed order cannot be cancelled');
+  });
+});
+
 
 module.exports = { Order, Item };

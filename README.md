@@ -60,3 +60,8 @@ Para executar os testes e verificar a cobertura de código, siga os passos abaix
     npm test -- --coverage
     ```
     Um relatório HTML será gerado na pasta `coverage`, que pode ser visualizado no navegador para verificar quais partes do código foram testadas.
+
+Equipe:
+
+[Alisson Queiroz](https://github.com/AlissonQueirozDantas) | [Geanio Rodrigues](https://github.com/geanio-rodrigues) | [Michelle Lima](https://github.com/michellelima8)
+

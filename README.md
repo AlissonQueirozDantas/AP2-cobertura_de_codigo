@@ -1,4 +1,4 @@
-# # AP2 - Cobertura de Código
+# AP2 - Cobertura de Código
 
 Este projeto contém a implementação de uma classe `Order` (Pedido) e `Item`, juntamente com testes unitários para garantir a qualidade e a cobertura do código. O objetivo é demonstrar a aplicação de testes automatizados com Jest para validar o comportamento do sistema de pedidos.
 
